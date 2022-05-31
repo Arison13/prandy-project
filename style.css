@@ -1,0 +1,47 @@
+:root{
+    --primary-color:rgb(64, 170, 64);
+    --secondary-color:rgb(32, 32, 32);
+    --font:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: .50rem 0;
+}
+.brand {
+    color: var(--primary-color);
+    font-family: var(--font);
+    /* border: 1px solid red; */
+    width: max-content;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+.nav-links {  
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid red; */
+    font-family: var(--font);
+}
+.nav-link {
+    list-style: none;
+}
+.nav-link a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid var(--primary-color);
+    padding: .25rem .50rem;
+}
