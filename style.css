@@ -90,22 +90,26 @@ body, html {
 
 
 .services{
-    border: 1px solid red;
     background: linear-gradient(to bottom, var(--primary-color), #f08b26);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
     width: 100%;
     height: 100vh;
+    column-gap: 10px;
+    
 }
 .service {
-    border: 1px solid blue;
-    width: 50%;
-    padding: 0;
-    height: 20%;
+    color: white;
+    font-family: var(--font);
 }
-
+.service-title  {
+    padding: .25rem;
+    text-align: center;
+    border-bottom:2px solid var(--secondary-color);
+    margin-top: 0;
+    width: 50%;
+}
 
 /* FOOTER STYLES */
 footer{
