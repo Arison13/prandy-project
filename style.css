@@ -119,11 +119,57 @@ footer{
     background-color: var(--secondary-color);
     padding: .25rem 0;
 }
+.footer-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: var(--font);
+}
+.logo{
+    width: 10rem;
+    text-align: center;
+    height: 10rem;
+    object-fit:contain ;
+    background-color: rgb(121, 119, 119);
+    border-radius: 50%;
+}
+
 .footer-title{
     font-family: var(--font);
     border-bottom:1px solid var(--primary-color);
     width: max-content;
     color: white;
+}
+
+.hours-info{
+    /* border: 1px solid red; */
+    line-height: 15px;
+}
+.hours-title{
+    font-size: 18px;
+    /* text-shadow: 1px 1px 1px white; */
+    color: var(--primary-color);
+    /* border: 1px solid red; */
+    margin: 0 0;
+    width: max-content;
+    border-bottom:1px solid white ;
+}
+
+.hours-details{
+    /* border: 1px solid red; */
+    padding: 1rem .50rem;
+}
+
+.days{
+    font-size: 16px;
+    border-bottom: 1px dotted var(--primary-color);
+    margin-right: 5px;    
+}
+
+.closed{
+    color: red;
+    margin-left: 5px;
 }
 .footer-links {
     display: flex;
@@ -135,6 +181,7 @@ footer{
 .footer-link {
     list-style: none;
 }
+
 .footer-link a > img {
     width: 3rem;
     border-radius: 10px;
@@ -142,3 +189,5 @@ footer{
     background-color: none;
     padding: .25rem .40rem;
 }
+
+
